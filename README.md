@@ -35,12 +35,14 @@ The directory structure currently looks like this:
 - gcsl (Contains all code)
     - envs (Contains all environment files and wrappers)
     - algo (Contains all GCSL code)
-        - gcsl.py (implements high-level algorithm logic, e.g. data collection, policy update, evaluate, save data)
+        - gcsl_n11_sto.py (implements high-level algorithm logic, e.g. data collection, policy update, evaluate, save data)
         - buffer.py (The replay buffer used to *relabel* and *sample* (s,g,a,h) tuples
-        - networks.py (Implements neural network policies.)
-        - variants.py (Contains relevant hyperparameters for GCSL)
+        - networks_n11.py (Implements neural network policies.)
+        - variants_n11.py (Contains relevant hyperparameters for GCSL)
 
 - experiments (Contains all launcher files)
+-       gcsl_example_n11.py(Normalized OCBC)
+-       gcsl_example.py(OCBC)
 - doodad (We require this old version of doodad)
 - dependencies (Contains other libraries like rlkit, rlutil, room_world, multiworld, etc.)
 - data (Not synced by github, but this will contain all experiment logs)
